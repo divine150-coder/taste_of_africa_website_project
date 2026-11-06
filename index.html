@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="Taste of Africa celebrates African cuisine with recipes, regions and food stories.">
+<title>Home | Taste of Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%B2%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="site-header__inner">
+<a class="logo" href="index.html">Taste of <span>Africa</span></a>
+<nav aria-label="Main navigation"><ul class="nav-list"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="west-africa.html">West Africa</a></li><li><a href="north-africa.html">North Africa</a></li><li><a href="east-africa.html">East Africa</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">&#9790; Dark</button>
+</div>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-h"><div class="container hero__grid">
+<div><p class="eyebrow">Welcome</p><h1 id="hero-h">Taste the Flavors of Africa</h1>
+<p class="lead">From smoky <mark>jollof rice</mark> to slow-cooked tagines and fermented injera, explore the dishes, spices and stories behind African cooking.</p>
+<p><a class="btn" href="recipes.html">Browse recipes</a> <a class="btn btn--ghost" href="about.html">Our mission</a></p></div>
+<div class="video"><iframe src="https://www.youtube.com/embed/evpPXaoyurE" title="60 rich African meals and their country of origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div></section>
+<section class="section container" aria-labelledby="feat-h"><h2 id="feat-h">Featured dishes</h2><p class="sub">Four signature dishes to start with.</p><div class="grid"><article class="card recipe-card" data-id="jollof-rice" data-region="west-africa">
+<figure class="card__figure"><img src="images/jollof-rice.jpeg" alt="Four close-ups of red jollof rice, some with roasted chicken" loading="lazy"><figcaption class="card__cap">West Africa &middot; Senegal</figcaption></figure>
+<div class="card__body"><h3><a href="jollof-rice.html">Jollof Rice</a></h3><p>Jollof rice is a one-pot celebration dish across West Africa.</p>
+<div class="card__actions"><a class="btn btn--sm" href="jollof-rice.html">View recipe</a><button class="fav-btn" type="button" data-id="jollof-rice" aria-pressed="false"><span class="heart" aria-hidden="true">&#10084;</span> <span class="fav-label">Favorite</span></button></div></div></article><article class="card recipe-card" data-id="tagine" data-region="north-africa">
+<figure class="card__figure"><img src="images/tagine.jpeg" alt="A pan of spiced meatballs and potatoes simmered in a tomato sauce, a tagine-style dish" loading="lazy"><figcaption class="card__cap">North Africa &middot; Morocco</figcaption></figure>
+<div class="card__body"><h3><a href="tagine.html">Chicken Tagine</a></h3><p>Tagine is both a dish and the conical clay pot it is cooked in.</p>
+<div class="card__actions"><a class="btn btn--sm" href="tagine.html">View recipe</a><button class="fav-btn" type="button" data-id="tagine" aria-pressed="false"><span class="heart" aria-hidden="true">&#10084;</span> <span class="fav-label">Favorite</span></button></div></div></article><article class="card recipe-card" data-id="injera" data-region="east-africa">
+<figure class="card__figure"><img src="images/injera.jpeg" alt="Folded thin flatbreads on a white plate" loading="lazy"><figcaption class="card__cap">East Africa &middot; Ethiopia</figcaption></figure>
+<div class="card__body"><h3><a href="injera.html">Injera</a></h3><p>Injera is a soft, sour, spongy flatbread made from fermented <mark>teff</mark> flour, central to Ethiopian and Eritrean meals.</p>
+<div class="card__actions"><a class="btn btn--sm" href="injera.html">View recipe</a><button class="fav-btn" type="button" data-id="injera" aria-pressed="false"><span class="heart" aria-hidden="true">&#10084;</span> <span class="fav-label">Favorite</span></button></div></div></article><article class="card recipe-card" data-id="isombe" data-region="east-africa">
+<figure class="card__figure"><img src="images/isombe.jpeg" alt="A pot and a bowl of green isombe next to a mound of stiff dough" loading="lazy"><figcaption class="card__cap">East Africa &middot; Rwanda</figcaption></figure>
+<div class="card__body"><h3><a href="isombe.html">Isombe</a></h3><p>Isombe is a beloved Rwandan dish of pounded cassava leaves slowly simmered with onion, garlic, eggplant and peanut.</p>
+<div class="card__actions"><a class="btn btn--sm" href="isombe.html">View recipe</a><button class="fav-btn" type="button" data-id="isombe" aria-pressed="false"><span class="heart" aria-hidden="true">&#10084;</span> <span class="fav-label">Favorite</span></button></div></div></article></div></section>
+<section class="section container" aria-labelledby="reg-h"><h2 id="reg-h">Explore by region</h2><p class="sub">Every region has its own staples, spices and cooking methods.</p>
+<div class="grid grid--3">
+<a class="region-card" href="west-africa.html"><img src="images/westafrican-dish.jpeg" alt="A collage of West African dishes including fried plantain and grilled meat skewers" loading="lazy"><span><strong>West Africa</strong>Rice, stews and bold pepper heat</span></a>
+<a class="region-card" href="north-africa.html"><img src="images/northafrican-dish.jpeg" alt="A plate of couscous topped with beef, shrimp, potatoes and carrots" loading="lazy"><span><strong>North Africa</strong>Tagines, couscous and warm spices</span></a>
+<a class="region-card" href="east-africa.html"><img src="images/east-africa.jpg" alt="A bowl of green leafy stew beside a ball of pounded dough on a white plate" loading="lazy"><span><strong>East Africa</strong>Injera, leafy stews and grilled meats</span></a></div></section>
+<section class="section container" aria-labelledby="trend-h"><h2 id="trend-h">Latest food trends</h2><p class="sub">What is changing in African kitchens and restaurants.</p>
+<div class="grid grid--3">
+<article class="card card--text"><h3>Ancient grains return</h3><p>Cooks and restaurants are rediscovering <mark>teff</mark>, <mark>fonio</mark> and sorghum for their flavor and nutrition.</p></article>
+<article class="card card--text"><h3>Plant-forward traditions</h3><p>Leafy stews, beans and groundnut sauces have long been plant-rich, and they are gaining new fans worldwide.</p></article>
+<article class="card card--text"><h3>Street food goes global</h3><p>Dishes like <mark>bunny chow</mark> and suya are moving from market stalls to restaurant menus around the world.</p></article></div></section>
+</main>
+<footer class="site-footer">
+<div class="site-footer__inner">
+<section aria-labelledby="news-h"><h2 id="news-h">Newsletter</h2><p>Get new African recipes in your inbox.</p>
+<form class="newsletter-form" novalidate><label for="news-email" class="sr-only">Email address</label><input type="email" id="news-email" placeholder="you@example.com" autocomplete="email" required><button type="submit" class="btn">Subscribe</button><p class="form-msg" role="status" aria-live="polite"></p></form></section>
+<nav aria-label="Footer navigation"><ul class="footer-nav"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="west-africa.html">West Africa</a></li><li><a href="north-africa.html">North Africa</a></li><li><a href="east-africa.html">East Africa</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div>
+<p class="copy">&copy; 2026 Taste of Africa by Divine Mutesi. Celebrating African food heritage.</p>
+</footer>
+</body>
+</html>
