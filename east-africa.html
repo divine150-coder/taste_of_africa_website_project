@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="Food culture of East Africa: staples, spices, techniques and recipes.">
+<title>East Africa | Taste of Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%B2%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="site-header__inner">
+<a class="logo" href="index.html">Taste of <span>Africa</span></a>
+<nav aria-label="Main navigation"><ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="west-africa.html">West Africa</a></li><li><a href="north-africa.html">North Africa</a></li><li><a href="east-africa.html" aria-current="page">East Africa</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">&#9790; Dark</button>
+</div>
+</header>
+<main id="main">
+<header class="page-hero"><div class="container"><p class="eyebrow">Culinary region</p><h1>East Africa</h1><p class="lead">East African cooking ranges from the fermented breads of the highlands to the leafy stews of the Great Lakes and the spiced rice of the Swahili coast.</p></div></header>
+<div class="container section"><figure class="wide"><img src="images/eastafrican-dish.jpeg" alt="A collage of cassava leaf stew served with white rice"><figcaption>A dish from East Africa.</figcaption></figure>
+<div class="two-col"><section aria-labelledby="st-h" class="panel"><h2 id="st-h">Staples</h2><ul><li>Teff, maize and sorghum</li><li>Beans, bananas and plantain</li><li>Cassava and cassava leaves</li><li>Rice and flatbreads</li></ul></section>
+<section aria-labelledby="te-h" class="panel"><h2 id="te-h">Cooking techniques</h2><ul><li>Fermenting batter for injera</li><li>Pounding and slow-simmering leafy greens</li><li>Grilling meat (nyama choma)</li><li>Cooking spiced rice with coconut</li></ul></section></div>
+<section aria-labelledby="sp-h"><h2 id="sp-h">Spices and flavors</h2><p>Flavor comes from <mark>berbere</mark>, <mark>cardamom</mark>, <mark>cloves</mark> and <mark>cinnamon</mark> on the coast.</p></section>
+<section aria-labelledby="ex-h"><h2 id="ex-h">Example dishes</h2><div class="grid"><article class="card recipe-card" data-id="injera" data-region="east-africa">
+<figure class="card__figure"><img src="images/injera.jpeg" alt="Folded thin flatbreads on a white plate" loading="lazy"><figcaption class="card__cap">East Africa &middot; Ethiopia</figcaption></figure>
+<div class="card__body"><h3><a href="injera.html">Injera</a></h3><p>Injera is a soft, sour, spongy flatbread made from fermented <mark>teff</mark> flour, central to Ethiopian and Eritrean meals.</p>
+<div class="card__actions"><a class="btn btn--sm" href="injera.html">View recipe</a><button class="fav-btn" type="button" data-id="injera" aria-pressed="false"><span class="heart" aria-hidden="true">&#10084;</span> <span class="fav-label">Favorite</span></button></div></div></article><article class="card recipe-card" data-id="isombe" data-region="east-africa">
+<figure class="card__figure"><img src="images/isombe.jpeg" alt="A pot and a bowl of green isombe next to a mound of stiff dough" loading="lazy"><figcaption class="card__cap">East Africa &middot; Rwanda</figcaption></figure>
+<div class="card__body"><h3><a href="isombe.html">Isombe</a></h3><p>Isombe is a beloved Rwandan dish of pounded cassava leaves slowly simmered with onion, garlic, eggplant and peanut.</p>
+<div class="card__actions"><a class="btn btn--sm" href="isombe.html">View recipe</a><button class="fav-btn" type="button" data-id="isombe" aria-pressed="false"><span class="heart" aria-hidden="true">&#10084;</span> <span class="fav-label">Favorite</span></button></div></div></article></div></section>
+<section aria-labelledby="v-h"><h2 id="v-h">Watch</h2><div class="video"><iframe src="https://www.youtube.com/embed/Kh4BUcKcrdE" title="Swahili Pilau recipe, an East African classic" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></section></div>
+</main>
+<footer class="site-footer">
+<div class="site-footer__inner">
+<section aria-labelledby="news-h"><h2 id="news-h">Newsletter</h2><p>Get new African recipes in your inbox.</p>
+<form class="newsletter-form" novalidate><label for="news-email" class="sr-only">Email address</label><input type="email" id="news-email" placeholder="you@example.com" autocomplete="email" required><button type="submit" class="btn">Subscribe</button><p class="form-msg" role="status" aria-live="polite"></p></form></section>
+<nav aria-label="Footer navigation"><ul class="footer-nav"><li><a href="index.html">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="west-africa.html">West Africa</a></li><li><a href="north-africa.html">North Africa</a></li><li><a href="east-africa.html" aria-current="page">East Africa</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div>
+<p class="copy">&copy; 2026 Taste of Africa by Divine Mutesi. Celebrating African food heritage.</p>
+</footer>
+</body>
+</html>
